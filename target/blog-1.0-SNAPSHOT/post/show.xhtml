@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Blog</title>
+    </h:head>
+    <h:body>
+        <h:form id="formId">
+
+            <ui:include src="post.xhtml" />
+
+            <h2>Comments</h2>            
+            <div id="comments">
+                <ui:include src="/comment/comment.xhtml" />
+            </div>
+
+            <h:commandButton value="Edit"
+                             action="#{postsController.edit(postBackingBean)}" />
+            <h:commandButton value="Back"
+                             action="posts" />
+        </h:form>
+        
+        <h2>New Comment</h2>
+        <h:form prependId="false">
+                <h:panelGrid columns="3">
+                    Post Id
+                    <h:inputText value="#{commentBackingBean.postId}" id="postId"/>
+                    <h:message for="postId" style="color: red" />
+                    User Id
+                    <h:inputText value="#{commentBackingBean.userId}" id="userId"/>
+                    <h:message for="userId" style="color:red" />
+                    Openion
+                    <h:inputTextarea value="#{commentBackingBean.openion}" id="openion"/>
+                    <h:message for="openion" style="color: red" />
+                    <h:panelGroup />
+                    <h:commandButton value="Add Comment"
+                                     actionListener="#{commentsController.add()}"
+                                     action="show">
+                        <f:ajax execute="postId userId openion" render="formId @form" />
+                    </h:commandButton>
+                </h:panelGrid>
+            </h:form>
+    </h:body>
+</html>

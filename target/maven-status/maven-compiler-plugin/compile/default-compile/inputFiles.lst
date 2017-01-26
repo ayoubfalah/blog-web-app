@@ -1,0 +1,14 @@
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/ejbs/AbstractFacade.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/controllers/CommentBackingBean.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/controllers/UsersController.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/models/CommentPK.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/models/User.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/ejbs/PostFacade.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/ejbs/UserFacade.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/controllers/CommentsController.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/controllers/PostBackingBean.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/controllers/UserBackingBean.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/models/Comment.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/controllers/PostsController.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/ejbs/CommentFacade.java
+/Users/ayoubfalah/projects/blog/src/main/java/de/softunivers/blog/models/Post.java

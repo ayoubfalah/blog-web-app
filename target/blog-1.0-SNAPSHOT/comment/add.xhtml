@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Add a new Comment</title>
+    </h:head>
+    <h:body>
+        <h:form>
+            <h:panelGrid columns="3">
+                Post Id
+                <h:inputText value="#{commentBackingBean.postId}" id="postId"/>
+                <h:message for="postId" style="color: red" />
+                User Id
+                <h:inputText value="#{commentBackingBean.userId}" id="userId"/>
+                <h:message for="userId" style="color:red" />
+                Openion
+                <h:inputTextarea value="#{commentBackingBean.openion}" id="openion"/>
+                <h:message for="openion" style="color: red" />
+                <h:panelGroup />
+                <h:commandButton value="ADD"
+                                 actionListener="#{commentsController.add()}"
+                                 action="comments"/>                
+            </h:panelGrid>
+        </h:form>
+        
+       
+    </h:body>
+</html>
